@@ -1,3 +1,7 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- blog.html  03:25:02 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -19,3 +23,5 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
+
+<body>

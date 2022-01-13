@@ -90,3 +90,21 @@
             </div>
         </div>   
     </footer>
+    
+<!-- JS
+============================================ -->
+
+
+
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+<!-- blog.html  03:25:02 GMT -->
+</html>
