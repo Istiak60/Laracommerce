@@ -1,4 +1,5 @@
-<x-master>
+@extends('layout.master')
+@section('content')
     <!--header area start-->
     <!--Offcanvas menu area start-->
    
@@ -26,28 +27,48 @@
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <div class="account-content">
-                                    <form action="#">
+
+                               {!! Form::open(['url' => '/register','method'=>'post','class'=>'single-acc-field boxes']) !!}
+                               
+                               {!! Form::label('name', 'Name*');!!}
+                               {!! Form::text('name','',['id'=>'name','placeholder'=>'Enter your Name']); !!}
+                               
+                             
+                               {!! Form::label('email', 'Email*');!!}
+                               {!! Form::email('email','',['id'=>'email','placeholder'=>'Enter your email']); !!}
+
+                               <!-- <label for="password">Password</label>
+                               <input type="password" id="password" placeholder="At least 6 Charecter"> -->
+
+                               {!! Form::label('password', 'Password*');!!}
+                               {!! Form::password('password',['id'=>'password','placeholder'=>'Enter your email']); !!}
+
+                              
+                               {!! Form::checkbox('check','',false,['id'=>'checkbox']); !!}
+                               {!! Form::label('checkbox', 'I am not a Robot');!!}
+                               {!!Form::button('Register');!!}
+
+
+                               {!! Form::close() !!}
+                                
+                                    <!-- <form action="#">
                                         <div class="single-acc-field">
-                                            <label for="name">Name</label>
-                                            <input type="text" id="name" placeholder="Enter Your Name">
+                                            
                                         </div>
                                         <div class="single-acc-field">
-                                            <label for="email">Email</label>
-                                            <input type="email" id="email" placeholder="Enter your Email">
+                                            
                                         </div>
                                         <div class="single-acc-field">
-                                            <label for="password">Password</label>
-                                            <input type="password" id="password" placeholder="At least 6 Charecter">
+
                                         </div>
                                         <div class="single-acc-field boxes">
-                                            <input type="checkbox" id="checkbox">
-                                            <label for="checkbox">I'm not a robot</label>
+                                          
                                         </div>
                                         <div class="single-acc-field">
                                             <button type="submit">Register now</button>
                                         </div>
                                         <a href="login.html">Already account? Login</a>
-                                    </form>
+                                    </form> -->
                                 </div>
                             </div>
                         </div>
@@ -56,6 +77,5 @@
 			</div>
 		</div>
 	</section>
-
+@endsection
     <!--footer area start-->
-</x-master>
