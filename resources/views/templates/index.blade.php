@@ -1,4 +1,6 @@
-<x-master>
+
+@extends('layout.master')
+@section('content')
 
     <!--header area start-->
     <!--Offcanvas menu area start-->
@@ -622,4 +624,4 @@
     <!--shipping area end-->
 	
 	
-                    </x-master>
+                 @endsection

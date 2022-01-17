@@ -1,6 +1,6 @@
-<x-master>
 
-<body>
+@extends('layout.master')
+@section('content')
 
     <!--header area start-->
    
@@ -56,4 +56,4 @@
 	</section>
 
     <!--footer area start-->
-</x-master>
+@endsection

@@ -1,4 +1,6 @@
-<x-master>
+
+@extends('layout.master')
+@section('content')
 
     <!--header area start-->
     <!--Offcanvas menu area start-->
@@ -45,4 +47,4 @@
 		</div>
 	</section>
 
-</x-master>
+@endsection

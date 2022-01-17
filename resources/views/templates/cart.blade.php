@@ -1,12 +1,8 @@
-<x-master>
 
-<body>
+@extends('layout.master')
+@section('content')
 
-    <!--header area start-->
-    <!--Offcanvas menu area start-->
-    <div class="off_canvars_overlay">
-            
-    </div>
+
     <div class="Offcanvas_menu">
         <div class="container">
             <div class="row">
@@ -269,4 +265,4 @@
     <!--footer area end-->
 
 
-</x-master>
+@endsection

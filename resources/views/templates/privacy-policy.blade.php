@@ -1,5 +1,6 @@
-<x-master>
 
+@extends('layout.master')
+@section('content')
     <!--header area start-->
     <!--Offcanvas menu area start-->
   
@@ -61,4 +62,4 @@
     <!--Privacy Policy area end-->
 
     <!--footer area start-->
-                        </x-master>
+                    @endsection

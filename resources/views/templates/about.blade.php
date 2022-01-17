@@ -1,4 +1,5 @@
-<x-master>
+@extends('layout.master')
+@section('content')
     <!--breadcrumbs area end-->
 
     <!--about section area -->
@@ -171,4 +172,4 @@
    <!--team area end-->
         
 
-</x-master>
+   @endsection
