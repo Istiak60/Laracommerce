@@ -289,4 +289,4 @@
     <!--Checkout page section end-->
 
     <!--footer area start-->
-@ensection
+@endsection
