@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+Tracking</title>
+@endsection
+@section('breadcrumb')
+<li>Tracking</li>
+@endsection
 @section('content')
 
     <!--header area start-->

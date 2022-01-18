@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+Product-Details</title>
+@endsection
+@section('breadcrumb')
+<li>Product Details</li>
+@endsection
 @section('content')
     <!--header area start-->
     <!--Offcanvas menu area start-->

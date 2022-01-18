@@ -1,6 +1,12 @@
 
 
 @extends('layout.master')
+@section('title')
+My-Account</title>
+@endsection
+@section('breadcrumb')
+<li>My Account</li>
+@endsection
 @section('content')
 <h1>Not Found</h1>
 <p>The requested URL was not found on this server.</p>

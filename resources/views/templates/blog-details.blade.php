@@ -1,4 +1,10 @@
 @extends('layout.master')
+@section('title')
+Blog-Details</title>
+@endsection
+@section('breadcrumb')
+<li>Blog-Details</li>
+@endsection
 @section('content')
 
     <div class="Offcanvas_menu">

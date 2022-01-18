@@ -1,4 +1,10 @@
 @extends('layout.master')
+@section('title')
+Checkout</title>
+@endsection
+@section('breadcrumb')
+<li>Checkout</li>
+@endsection
 @section('content')
 
     <!--header area start-->

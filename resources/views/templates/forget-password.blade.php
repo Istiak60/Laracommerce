@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+Forget-Password</title>
+@endsection
+@section('breadcrumb')
+<li>Forget-Password</li>
+@endsection
 @section('content')
 
     <!--header area start-->

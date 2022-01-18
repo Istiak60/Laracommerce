@@ -1,4 +1,10 @@
 @extends('layout.master')
+@section('title')
+Contact</title>
+@endsection
+@section('breadcrumb')
+<li>Contact</li>
+@endsection
 @section('content')
     <!--header area start-->
     <!--Offcanvas menu area start-->

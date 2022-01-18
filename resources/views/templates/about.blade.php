@@ -1,4 +1,10 @@
 @extends('layout.master')
+@section('title')
+About</title>
+@endsection
+@section('breadcrumb')
+<li>About</li>
+@endsection
 @section('content')
     <!--breadcrumbs area end-->
 

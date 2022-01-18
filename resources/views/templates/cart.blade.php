@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+Cart</title>
+@endsection
+@section('breadcrumb')
+<li>Cart</li>
+@endsection
 @section('content')
 
 

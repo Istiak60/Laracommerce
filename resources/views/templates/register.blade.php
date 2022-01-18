@@ -1,4 +1,10 @@
 @extends('layout.master')
+@section('title')
+Register</title>
+@endsection
+@section('breadcrumb')
+<li>Register</li>
+@endsection
 @section('content')
     <!--header area start-->
     <!--Offcanvas menu area start-->

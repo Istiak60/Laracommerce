@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+FAQ</title>
+@endsection
+@section('breadcrumb')
+<li>FAQ</li>
+@endsection
 @section('content')
 
     <!--header area start-->

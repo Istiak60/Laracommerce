@@ -1,4 +1,10 @@
 @extends('layout.master')
+@section('title')
+Blog</title>
+@endsection
+@section('breadcrumb')
+<li>Blog</li>
+@endsection
 @section('content')
 
 

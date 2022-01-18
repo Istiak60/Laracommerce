@@ -303,7 +303,7 @@
                     <div class="breadcrumb_content">
                         <ul>
                             <li><a href="index-2">home</a></li>
-                            <li>blog details</li>
+                            @yield('breadcrumb')
                         </ul>
                     </div>
                 </div>

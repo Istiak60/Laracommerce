@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+Login</title>
+@endsection
+@section('breadcrumb')
+<li>Login</li>
+@endsection
 @section('content')
 
     <!--header area start-->

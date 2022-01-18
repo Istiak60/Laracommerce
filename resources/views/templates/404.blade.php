@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+404</title>
+@endsection
+@section('breadcrumb')
+<li>404</li>
+@endsection
 @section('content')
 
     <!--header area start-->

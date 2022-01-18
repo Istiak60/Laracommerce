@@ -1,5 +1,11 @@
 
 @extends('layout.master')
+@section('title')
+Wishlist</title>
+@endsection
+@section('breadcrumb')
+<li>Wishlist</li>
+@endsection
 @section('content')
 <title>404 Not Found</title>
 </head><body>
