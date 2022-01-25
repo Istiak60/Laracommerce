@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SliderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,15 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('sliders',SliderController::class);
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/home', function () {
     return view('templates.master');
 });
+
 Route::get('/about', function () {
     return view('templates.about');
 });
+
 Route::get('/cart', function () {
     return view('templates.cart');
 });
@@ -76,3 +82,6 @@ Route::get('/wishlist', function () {
 Route::get('/404', function () {
     return view('templates.404');
 });
+*/
+
+Route::view('/home2', 'sliders.index');
