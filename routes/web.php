@@ -15,7 +15,7 @@ use App\Http\Controllers\SliderController;
 */
 
 Route::resource('sliders',SliderController::class);
-/*
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -82,6 +82,6 @@ Route::get('/wishlist', function () {
 Route::get('/404', function () {
     return view('templates.404');
 });
-*/
+
 
 Route::view('/home2', 'sliders.index');

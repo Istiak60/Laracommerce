@@ -11,7 +11,7 @@ index</title>
 			<a href="{{route('sliders.create')}}" class="btn btn-sm btn btn-info">CREATE</a>
 		</div>
 		<div class="card-body">
-			<table class="table-striped">
+			<table class=" table table-striped">
 				<thead>
 					<tr>
 						<th>ID</th>
@@ -35,11 +35,13 @@ index</title>
 						<!-- <td></td>-->
 						<td>
 							<a href="{{route('sliders.edit',$slider->id)}}" class="btn btn-info">Edit</a>
-							<!-- <form action="{{route('sliders.destroy',$slider->id)}}" method="">
+							<a href="{{route('sliders.show',$slider->id)}}" class="btn btn-info">SHOW</a>
+							<form action="{{route('sliders.destroy',$slider->id)}}" method="post">
 								@csrf
-								<button type="submit"class="btn btn-danger">Delete</button>
-							</form> -->
-							<a href="{{route('sliders.destroy',$slider->id)}}" class="btn btn-info">Destroy</a>
+								@method('DELETE')
+								<button type="submit"class="btn btn-danger" onclick=return confirm('are you sure to delete?')>Delete</button>
+							</form>
+							<!-- <a href="{{route('sliders.destroy',$slider->id)}}" class="btn btn-info">Destroy</a> -->
 
 						</td> 
 					</tr>

@@ -49,7 +49,8 @@ class SliderController extends Controller
      */
     public function show(Slider $slider)
     {
-        //
+    
+        return view('sliders.show',compact('slider'));
     }
 
     /**
@@ -58,9 +59,10 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
-    public function edit(Slider $slider)
+    public function edit($id)
     {
-        //
+      $slider = Slider::where('id',$id)->first();
+      return view('sliders.edit',compact('slider'));
     }
 
     /**
@@ -72,7 +74,9 @@ class SliderController extends Controller
      */
     public function update(Request $request, Slider $slider)
     {
-        //
+        $slider->update($request->all());
+        return Redirect()->route('sliders.index');
+        
     }
 
     /**
@@ -84,6 +88,7 @@ class SliderController extends Controller
     public function destroy($id)
     {
        Slider::where('id',$id)->delete();
-       dd('Succesfully deleted');
+       return Redirect()->route('sliders.index');
+
     }
 }
