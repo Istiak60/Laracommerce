@@ -24,6 +24,14 @@ Route::get('/home', function () {
     return view('templates.master');
 });
 
+Route::get('/home', function () {
+    return view('backend.home');
+});
+
+Route::get('/table', function () {
+    return view('backend.table');
+});
+
 Route::get('/about', function () {
     return view('templates.about');
 });
